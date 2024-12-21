@@ -66,3 +66,4 @@ fi
 
 # Execute the command
 eval $CMD
+
