@@ -20,3 +20,4 @@ if ${CONDA_EXE} env list | egrep -qe "^hummingbot"; then
 else
     echo "Environment already removed."
 fi
+
