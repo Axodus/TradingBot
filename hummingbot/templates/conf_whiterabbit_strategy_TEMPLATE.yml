@@ -1,0 +1,10 @@
+template_version: 1
+strategy: whiterabbit
+connector: null
+market: null
+rsi_period: 14
+rsi_long_level: 30
+rsi_short_level: 70
+volume_ma_period: 21
+candlestick_patterns: engulfing,hammer
+candlestick_source: pandas-ta
