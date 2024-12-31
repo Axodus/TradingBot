@@ -27,10 +27,10 @@ class DirectionalTradingControllerConfigBase(ControllerConfigBase):
             prompt_on_new=True,
             prompt=lambda mi: "Enter the name of the exchange to trade on (e.g., binance_perpetual):"))
     trading_pair: str = Field(
-        default="WLD-USDT",
+        default="BNB-USDT",
         client_data=ClientFieldData(
             prompt_on_new=True,
-            prompt=lambda mi: "Enter the trading pair to trade on (e.g., WLD-USDT):"))
+            prompt=lambda mi: "Enter the trading pair to trade on (e.g., BNB-USDT):"))
     max_executors_per_side: int = Field(
         default=2,
         client_data=ClientFieldData(

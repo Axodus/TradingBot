@@ -23,10 +23,10 @@ class MarketMakingControllerConfigBase(ControllerConfigBase):
             prompt_on_new=True,
             prompt=lambda mi: "Enter the name of the exchange to trade on (e.g., binance_perpetual):"))
     trading_pair: str = Field(
-        default="WLD-USDT",
+        default="BNB-USDT",
         client_data=ClientFieldData(
             prompt_on_new=True,
-            prompt=lambda mi: "Enter the trading pair to trade on (e.g., WLD-USDT):"))
+            prompt=lambda mi: "Enter the trading pair to trade on (e.g., BNB-USDT):"))
     buy_spreads: List[float] = Field(
         default="0.01,0.02",
         client_data=ClientFieldData(

@@ -46,7 +46,7 @@ class ControllerConfigBase(BaseClientModel):
             prompt=lambda mi: "Enter the total amount in quote asset to use for trading (e.g., 1000):"))
     manual_kill_switch: bool = Field(default=None, client_data=ClientFieldData(is_updatable=True, prompt_on_new=False))
     candles_config: List[CandlesConfig] = Field(
-        default="binance_perpetual.WLD-USDT.1m.500",
+        default="binance_perpetual.BNB-USDT.1m.500",
         client_data=ClientFieldData(
             is_updatable=True,
             prompt_on_new=True,

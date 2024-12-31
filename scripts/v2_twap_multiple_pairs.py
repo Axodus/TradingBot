@@ -27,7 +27,7 @@ class TWAPMultiplePairsConfig(StrategyV2ConfigBase):
             prompt_on_new=True
         ))
     twap_configs: List[TWAPExecutorConfig] = Field(
-        default="binance,WLD-USDT,BUY,1,100,60,15,TAKER",
+        default="binance,BNB-USDT,BUY,1,100,60,15,TAKER",
         client_data=ClientFieldData(
             prompt=lambda mi: "Enter the TWAP configurations (e.g. connector,trading_pair,side,leverage,total_amount_quote,total_duration,order_interval,mode:same_for_other_config): ",
             prompt_on_new=True))
